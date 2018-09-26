@@ -20,7 +20,7 @@ public class ConnectionFactory {
 	public static Connection getSnowflakeConnection() {
 		try {
 			Properties properties = buildConnectionProperties();
-			String connectionUrl = "jdbc:snowflake://analytics_ascendlearning.snowflakecomputing.com";
+			String connectionUrl = "<connection_url>";
 			return DriverManager.getConnection(connectionUrl, properties);
 		} catch (SQLException e) {
 			StringWriter stack = new StringWriter();
